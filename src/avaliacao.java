@@ -68,11 +68,15 @@ public class avaliacao {
 			else if (opcaomenu == 2) {
 				System.out.println("Custo total = R$ " + custototal);
 			}
+			else if (opcaomenu == 3) {
+				System.out.println("Pessoa que ganhou mais: " + nome);
+			}
+			else if (opcaomenu == 4) {
+				System.out.println("FIM DO PROGRAMA!");
+			}
 		}
 		
-		
-		
-		
+		sc.close();
 		
 	}
 
