@@ -32,7 +32,7 @@ public class avaliacao {
 		totalhrs = totalhrs + horastrab;
 		
 	
-		while (escolha == 'S') {
+		while (escolha == 'S' || escolha == 's') {
 			System.out.println("Nome: ");
 			nome = sc.next();
 			
@@ -51,13 +51,7 @@ public class avaliacao {
 			totalhrs = totalhrs + horastrab;
 		}
 		
-		System.out.println("MENU");
-		System.out.println("1 - Total de horas trabalhadas");
-		System.out.println("2 - Custo total");
-		System.out.println("3 - Nome da pessoa que ganhou mais");
-		System.out.println("4 - Sair");
-		System.out.println("Digite uma opcão: ");
-		opcaomenu = sc.nextInt();
+		opcaomenu = 0;
 		
 		while (opcaomenu != 4) {
 			System.out.println("MENU");
@@ -67,7 +61,17 @@ public class avaliacao {
 			System.out.println("4 - Sair");
 			System.out.println("Digite uma opcão: ");
 			opcaomenu = sc.nextInt();
+			
+			if (opcaomenu == 1) {
+				System.out.println("Total de horas = " + totalhrs);
+			}
+			else if (opcaomenu == 2) {
+				System.out.println("Custo total = R$ " + custototal);
+			}
 		}
+		
+		
+		
 		
 		
 	}
